@@ -26,3 +26,12 @@ var x = setInterval(function() {
     clearInterval(x);
   }
 }, 1000);
+
+function link_hover(link){
+  link.childNodes[0].classList.add("link_hover");
+  link.childNodes[0].classList.remove("link_unhover");
+}
+function link_unhover(link){
+  link.childNodes[0].classList.remove("link_hover");
+  link.childNodes[0].classList.add("link_unhover");
+}

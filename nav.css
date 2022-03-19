@@ -33,7 +33,10 @@ body{
         text-decoration: none;
         margin-left: 50px;
         letter-spacing: 1.7px;
+        position: relative;
+        transition: all 0.2s;
     }
+
     nav div:nth-child(2) a:first-child{
         margin: 0;
     }
@@ -56,7 +59,7 @@ body{
     nav div:nth-child(3) a:hover,
     #JOIN_US:hover{
         background-color: #FDD413;
-        box-shadow: 3px 3px white;
+        box-shadow: 3px 0px white;
     }
 /*----------------------------------*/
 
@@ -64,83 +67,84 @@ body{
 
 /*********** Header Start ***********/
 /*----------------------------------*/
-header{
-    /* background-color: #3945BA; */
-    position: relative;
-    font-family: 'Sarabun', sans-serif;
-    color: white;
-    padding: 50px 0 100px 0;
-}
-header::before{
-    content: "";
-    position: absolute;
-    width: 100%;
-    bottom: -100px;
-    z-index: -10;
-    background-image: url(Ellipse\ 6.png);
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 400px;
-    width: 100%;
-}
-header::after{
-    content: "";
-    position: absolute;
-    top: 0;
-    z-index: -10;
-    width: 100%;
-    height: 70%;
-    background-color: #3945BA;
-}
-header>div{
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-header h1{
-    font-size: 40px;
-    font-family: 'Cairo', sans-serif;
-}
-header p{
-    font-family: 'Cairo', sans-serif;
-    font-size: 35px;
-}
-header a{
-    font-size: 25px;
-    padding: 10px 40px;
-    letter-spacing: normal;
-}
-#countdown{
-    display: flex;
-}
-#countdown div{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 5px;
-    width: 50px;
-    overflow: hidden;
-    font-family: 'Sarabun', sans-serif;
-    margin-left: 20px;
-}
-#countdown span:nth-child(1){
-    background-color: white;
-    color: black;
-    font-size: 20px;
-    font-weight: bold;
-    display: inline-block;
-    text-align: center;
-    width: 100%;
-    padding: 10px 5px;
-}
-#countdown span:nth-child(2){
-    background-color: #B49F52;
-    color: black;
-    display: inline-block;
-    text-align: center;
-    width: 100%;
-    padding: 5px;
-}
+    header{
+        /* background-color: #3945BA; */
+        position: relative;
+        font-family: 'Sarabun', sans-serif;
+        color: white;
+        padding: 50px 0 100px 0;
+    }
+    header::before{
+        content: "";
+        position: absolute;
+        width: 100%;
+        bottom: -100px;
+        z-index: -10;
+        background-image: url(Ellipse\ 6.png);
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 400px;
+        width: 100%;
+    }
+    header::after{
+        content: "";
+        position: absolute;
+        top: 0;
+        z-index: -10;
+        width: 100%;
+        height: 70%;
+        background-color: #3945BA;
+    }
+    header>div{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    header h1{
+        font-size: 40px;
+        font-family: 'Cairo', sans-serif;
+        text-shadow: 1px 1px #FDD413;
+    }
+    header p{
+        font-family: 'Cairo', sans-serif;
+        font-size: 35px;
+    }
+    header a{
+        font-size: 25px;
+        padding: 10px 40px;
+        letter-spacing: normal;
+    }
+    #countdown{
+        display: flex;
+    }
+    #countdown div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 5px;
+        width: 50px;
+        overflow: hidden;
+        font-family: 'Sarabun', sans-serif;
+        margin-left: 20px;
+    }
+    #countdown span:nth-child(1){
+        background-color: white;
+        color: black;
+        font-size: 20px;
+        font-weight: bold;
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+        padding: 10px 5px;
+    }
+    #countdown span:nth-child(2){
+        background-color: #B49F52;
+        color: black;
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+        padding: 5px;
+    }
 /*----------------------------------*/
