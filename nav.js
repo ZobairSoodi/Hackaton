@@ -35,3 +35,11 @@ function link_unhover(link){
   link.childNodes[0].classList.remove("link_hover");
   link.childNodes[0].classList.add("link_unhover");
 }
+function menu_open(){
+  document.getElementById("menu").style.transform = "translate(-50%, 0)";
+  document.getElementById("menu_before").style.backgroundColor ="#3946ba7e";
+}
+function menu_close(){
+  document.getElementById("menu").style.transform = "translate(-50%, -130vh)";
+  document.getElementById("menu_before").style.backgroundColor ="#3946ba00";
+}

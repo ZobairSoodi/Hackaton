@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/ab021e0629.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="nav.css">
     <title>Document</title>
 </head>
@@ -19,6 +20,17 @@
         </div>
         <div style="position: relative;">
             <a href="#">JOIN US</a>
+        </div>
+        <div id="nav_menu">
+            <i onclick="menu_open()" class="fa-solid fa-bars"></i>
+            <div id="menu">
+                <div id="menu_before"></div>
+                <i onclick="menu_close()" class="fa-solid fa-xmark"></i>
+                <a href="#">HOME</a>
+                <a href="#">PROGRAM</a>
+                <a href="#">SOLICODE</a>
+                <a href="#">JOIN US</a>
+            </div>
         </div>
     </nav>
     <header>
@@ -46,6 +58,15 @@
             <div style="position: relative;">
                 <a href="#" id="JOIN_US">JOIN US</a>
             </div>
+        </div>
+        <div>
+            <img src="Software engineer-amico 1.png" alt="">
+        </div>
+        <div class="header_texture" id="left_texture">
+            <img src="left_texture.png" alt="">
+        </div>
+        <div class="header_texture" id="right_texture">
+            <img src="right_texture.png" alt="">
         </div>
     </header>
     <script src="nav.js"></script>
