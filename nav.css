@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@500&family=Sarabun&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
 *{
     box-sizing: border-box;
 }
@@ -79,7 +80,7 @@ header::after{
     top: 0;
     z-index: -10;
     width: 100%;
-    height: 50%;
+    height: 70%;
     background-color: #3945BA;
 }
 header>div{
@@ -87,5 +88,49 @@ header>div{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+header h1{
+    font-size: 40px;
+    font-family: 'Cairo', sans-serif;
+}
+header p{
+    font-family: 'Cairo', sans-serif;
+    font-size: 35px;
+}
+header a{
+    font-size: 25px;
+    padding: 10px 40px;
+    letter-spacing: normal;
+}
+#countdown{
+    display: flex;
+}
+#countdown div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    width: 50px;
+    overflow: hidden;
+    font-family: 'Sarabun', sans-serif;
+    margin-left: 20px;
+}
+#countdown span:nth-child(1){
+    background-color: white;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    padding: 10px 5px;
+}
+#countdown span:nth-child(2){
+    background-color: #B49F52;
+    color: black;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    padding: 5px;
 }
 /*----------------------------------*/
