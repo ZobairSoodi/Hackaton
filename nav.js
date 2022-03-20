@@ -43,3 +43,11 @@ function menu_close(){
   document.getElementById("menu").style.transform = "translate(-50%, -130vh)";
   document.getElementById("menu_before").style.backgroundColor ="#3946ba00";
 }
+function dark_mode(){
+  var sect = document.getElementsByClassName("toggle_mode");
+  for(var i = 0; i < sect.length; i++){
+    sect[i].classList.toggle("dark_mode");
+  }
+  document.getElementById("header_before").classList.toggle("header_before_dark");
+  document.getElementById("sect3_before").classList.toggle("sect3_before_dark");
+}

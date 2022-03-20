@@ -9,7 +9,7 @@
     <title>Document</title>
 </head>
 <body>
-    <nav>
+    <nav class="toggle_mode">
         <div>
             <img src="images/logo.png" alt="">
         </div>
@@ -68,6 +68,8 @@
         <div class="header_texture" id="right_texture">
             <img src="images/right_texture.png" alt="">
         </div>
+        <span id="header_before"></span>
+        <span class="toggle_mode" id="header_after"></span>
     </header>
     <main>
         <section>
@@ -121,7 +123,7 @@
                     </span>
                 </div>
             </div>
-            <div style="" id="sect3_initial">
+            <div id="sect3_initial">
                 <h1>
                     EYES ON OUR HACKATHON
                 </h1>
@@ -148,6 +150,8 @@
                     </div>
                 </div>
             </div>
+            <span id="sect3_before"></span>
+            <span class="toggle_mode" id="sect3_after"></span>
         </section>
         <section>
             <h1>sponsorship</h1>
@@ -158,6 +162,7 @@
             </div>
         </section>
     </main>
+    <button id="dark_mode_btn" onclick="dark_mode()">dark mode</button>
     <script src="nav.js"></script>
 </body>
 </html>
