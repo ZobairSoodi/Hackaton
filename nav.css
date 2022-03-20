@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@500&family=Sarabun&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
 *{
     box-sizing: border-box;
 }
@@ -51,7 +52,7 @@ body{
         align-items: center;
     }
     nav div:nth-child(3) a,
-    #JOIN_US{
+    .JOIN_US{
         background-color: white;
         padding: 5px 20px;
         text-decoration: none;
@@ -60,7 +61,7 @@ body{
         transition: all 0.5s;
     }
     nav div:nth-child(3) a:hover,
-    #JOIN_US:hover{
+    .JOIN_US:hover{
         background-color: #FDD413;
         box-shadow: 3px 0px white;
     }
@@ -91,7 +92,7 @@ body{
         width: 100%;
         bottom: -100px;
         z-index: -10;
-        background-image: url(Ellipse\ 6.png);
+        background-image: url(images/Ellipse\ 6.png);
         background-position: bottom;
         background-repeat: no-repeat;
         background-size: cover;
@@ -193,6 +194,62 @@ body{
     }
 /*----------------------------------*/
 
+
+
+/************ Main Start ************/
+/*----------------------------------*/
+
+    /********* sect1 Start **********/
+    /*------------------------------*/
+        section:nth-child(1){
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            margin-top: 200px;
+        }
+        section:nth-child(1) div{
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        section:nth-child(1) div:nth-child(1) img{
+            width: 85%;
+        }
+        section:nth-child(1) div:nth-child(2){
+            width: 50%;
+            display: flex;
+            justify-content: flex-end;
+            position: relative;
+        }
+        section:nth-child(1) div:nth-child(2) img{
+            width: 100%;
+        }
+        section:nth-child(1) div:nth-child(3){
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            padding: 50px;
+        }
+        section:nth-child(1) a{
+            font-family: 'Sarabun', sans-serif;
+            padding: 10px 30px;
+            font-size: 30px;
+            background-color: #E4E6FA;
+        }
+    /*------------------------------*/
+
+/*----------------------------------*/
+
+
+
+
+
+
+
+
+
 /********** Media Queries ***********/
 /*----------------------------------*/
     @media only screen and (max-width:786px) {
@@ -258,6 +315,19 @@ body{
         }
         header>div:nth-child(2){
             display: none;
+        }
+        section:nth-child(1){
+            flex-direction: column;
+            margin-top: 100px;
+        }
+        section:nth-child(1) div{
+            width: 100% !important;
+        }
+        section:nth-child(1) div:nth-child(1){
+            order: 2;
+        }
+        section:nth-child(1) div:nth-child(2){
+            order: 1;
         }
     }
 /*----------------------------------*/
