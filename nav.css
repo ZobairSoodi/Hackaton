@@ -384,6 +384,52 @@ body{
         color: #FDD413;
         margin-right: 10px;
     }
+    .sect3_click{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-sizing: border-box;
+        width: 60%;
+        font-family: cairo, sans-serif;
+        color: white;
+        font-weight: bold;
+        letter-spacing: 1.4px;
+        height: min-content;
+    }
+    .sect3_click h2{
+        color: #FDD413;
+        text-align: center;
+    }
+    .sect3_click>div{
+        width: 50%;
+        background-color: rgba(229, 229, 229, 0.58);
+        box-sizing: border-box;
+        padding: 20px 50px;
+    }
+    /*------------------------------*/
+
+    /********* sect4 Start **********/
+    /*------------------------------*/
+    section:nth-child(4){
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 80px 0;
+        font-size: 30px;
+        font-weight: bold;
+    }
+    section:nth-child(4) h1{
+        color: #F9BC0F;
+        font-family: cairo, sans-serif;
+        text-align: center;
+        margin: 0 0 20px 0;
+    }
+    section:nth-child(4) div{
+        display: flex;
+        width: 60%;
+        justify-content: space-around;
+        align-items: center;
+    }
     /*------------------------------*/
 
 /*----------------------------------*/
