@@ -1,0 +1,40 @@
+/* popups */
+
+
+.popups{
+    padding: 50px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    background-color: rgba(229, 229, 229, 0.58);
+}
+
+.popups h3{
+    text-align: center;
+    font-weight: 700;
+}
+
+ul{
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+#close I{
+    width: 33px;
+    height: 33px;
+    color: #cfcfcf;
+    margin-bottom: 30px;
+}
+
+.skills, .trophy, .calendar{
+    display: none;
+}
+
+button{
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+
+button:focus{
+    outline: none;
+}

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <script src="https://kit.fontawesome.com/ab021e0629.js" crossorigin="anonymous"></script> -->
     <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="popup.css">
     <title>Document</title>
 </head>
 <body>
@@ -103,35 +104,83 @@
         <section>
             <div>
                 <div>
-                    <img id="schedule" src="images/sect3_schedule.png">
+                    <button onclick="display(this.id)" id="calendar">
+                        <img id="schedule"  src="images/sect3_schedule.png">
+                    </button>
                     <span>
                         Skills Needed
                     </span>
                 </div>
+            </button>
                 <div>
-                    <img id="skills" src="images/sect3_skills.png">
+                    <button onclick="display(this.id)" id="skills">
+                        <img id="skills"  src="images/sect3_skills.png">
+                    </button>
                     <span>
                         Schedule
                     </span>
                 </div>
                 <div style="margin-top: 30px;">
-                    <img id="prize" src="images/sect3_trophy.png">
+                    <button onclick="display(this.id)" id="trophy">
+                        <img id="prize" src="images/sect3_trophy.png">
+                    </button>
                     <span>
                         Prize
                     </span>
                 </div>
             </div>
             <div style="" id="sect3_initial">
-                <h1>
-                    EYES ON OUR HACKATHON
-                </h1>
-                <h2>
-                    Find out more about our hackathon <br>
-                    by clicking on the left-hand options
-                </h2>
-                <p>
-                    <i class="fa-solid fa-arrow-left-long"></i> Tap to learn more
-                </p>
+                <div id="ps">
+
+                    <h1>
+                        EYES ON OUR HACKATHON
+                    </h1>
+                    <h2>
+                        Find out more about our hackathon <br>
+                        by clicking on the left-hand options
+                    </h2>
+                    <p>
+                        <i class="fa-solid fa-arrow-left-long"></i> Tap to learn more
+                    </p>
+                </div>
+
+                <div id="popupcal" class="calendar popups" data-effect="mfp-3d-unfold">
+            
+                    <button id="close" onclick="exit()" class="d-flex justify-content-start float-right"><i class="fa-solid fa-xmark fa-2xl"></i></button>
+                    <h3>Schedule</h3>
+                    The competition will be held on the xx/xx/xx and proceed as follows:
+                    <ul>
+                        <li>the opening at xx : xx </li>
+                        <li>the start  at xx : xx </li>
+                        <li>lunch pause from xx : xx to xx : xx</li>
+                        <li>presentation at xx : xx</li>
+                    </ul>
+                </div>
+    
+                <div id="popupskill" class="skills popups" data-effect="mfp-3d-unfold">
+                
+                    <button id="close" onclick="exit()" class="d-flex justify-content-start float-right"><i class="fa-solid fa-xmark fa-2xl"></i></button>
+                    <h3>Skills Needed</h3>
+                    Participants will work in teams to design and developp a visually appealing website by combining  variants skills 
+    
+                    <ul>
+                        <li>skills modeling websites</li>
+                        <li>html/css</li>
+                        <li>javascript</li>
+                    </ul>
+                </div> 
+    
+                <div id="popuptro" class="trophy popups" data-effect="mfp-3d-unfold">
+                
+                    <button id="close" onclick="exit()" class="d-flex justify-content-start float-right"><i class="fa-solid fa-xmark fa-2xl"></i></button>
+                    <h3>Prize</h3>
+                    As a prize, the winning team will receive a legal certificate <b>Signed by </b>:
+                    <ul>
+                        <li>The digital learning platform <b>Simplonline</b></li>
+                        <li>The Office of Professional Training
+                            and Work Promotion <b>(OFPPT)</b></li>
+                    </ul>
+                </div>
             </div>
             <div style="display: none;" class="sect3_click">
                 <div>
@@ -159,5 +208,6 @@
         </section>
     </main>
     <script src="nav.js"></script>
+    <script src="cards.js"></script>
 </body>
 </html>
