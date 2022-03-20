@@ -1,0 +1,46 @@
+        /* popup animation */
+
+        .mfp-3d-unfold {
+            .mfp-content {
+              perspective: 2000px; 
+            }
+            
+            /* start state */
+            .mfp-with-anim {
+              opacity: 0;
+              transition: all 0.3s ease-in-out;
+              transform-style: preserve-3d;
+              transform: rotateY(-60deg);
+            }
+            
+            
+            &.mfp-bg {
+              opacity: 0;
+                transition: all 0.5s;
+            }
+            
+            /* animate in */
+            &.mfp-ready {
+              .mfp-with-anim {
+                opacity: 1;
+                transform: rotateY(0deg);
+              }
+              &.mfp-bg {
+                opacity: 0.8;
+              }
+            }
+            
+            /* animate out */
+            &.mfp-removing {
+              
+              .mfp-with-anim {
+                transform: rotateY(60deg);
+                opacity: 0;
+              }
+              &.mfp-bg {
+                opacity: 0;
+              }
+              
+            }
+            
+          }

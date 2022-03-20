@@ -9,6 +9,98 @@
     src: url('assets/fonts/NotoSans-Regular.ttf');
 }
 
+
+/* eyes on our hackathon */
+.content {
+    width: 100%;
+    background: #3945ba;
+    color: #fff;
+  }
+.content div{
+    margin: 20px;
+}
+
+.content h3{
+    color: #fdd413;
+}
+
+.content span a i{
+color: #fdd413;
+}
+
+.content span a{
+    text-align: center;
+    color: #fff;
+}
+
+button{
+    outline: none;
+    border: none;
+    color: none;
+    background-color: transparent;
+}
+
+
+button:focus{
+    outline: none;
+}
+
+.circle{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #E5E5E5;
+    margin: 20px;
+}
+
+.circle:hover{
+    background-color: #dbdbdb;
+}
+
+.icons{
+    padding: 25px;
+}
+
+/* popups */
+
+
+.popups{
+    padding: 50px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    background-color: rgba(229, 229, 229, 0.58);
+}
+
+.popups h3{
+    text-align: center;
+    font-weight: 700;
+}
+
+ul{
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+#close I{
+    width: 33px;
+    height: 33px;
+    color: #cfcfcf;
+    margin-bottom: 30px;
+}
+
+.skills, .trophy, .calendar{
+    display: none;
+}
+          
+          
+          
+/* map */
+    .map{
+        height: 300px;
+    }
+
+
+/* footer */
 .footer{
     background-color: #3945ba;
     font-family: 'noto', sans-serif;
