@@ -529,9 +529,11 @@ body{
 
 
 #dark_mode_btn{
-    position: fixed;
-    bottom: 10px;
-    left: 10px;
+    border: none;
+    background-color: transparent;
+    color: #FDD413;
+    font-size: 30px;
+    margin-left: 10px;
 }
 .dark_mode{
     background-color: #28282C !important;

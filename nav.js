@@ -27,6 +27,8 @@ var x = setInterval(function() {
   }
 }, 1000);
 
+let is_dark = false;
+
 function link_hover(link){
   link.childNodes[0].classList.add("link_hover");
   link.childNodes[0].classList.remove("link_unhover");
@@ -50,4 +52,14 @@ function dark_mode(){
   }
   document.getElementById("header_before").classList.toggle("header_before_dark");
   document.getElementById("sect3_before").classList.toggle("sect3_before_dark");
+  var dark_btn = document.getElementById("dark_mode_btn");
+  if(!is_dark){
+    dark_btn.childNodes[0].classList = "fa-solid fa-moon";
+    is_dark = true;
+  }
+  else{
+    dark_btn.childNodes[0].classList = "fa-solid fa-sun";
+    is_dark = false;
+  }
+  
 }
