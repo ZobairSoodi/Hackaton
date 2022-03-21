@@ -544,3 +544,10 @@ body{
 .header_before_dark{
     background-image: url(images/header_bg_dark.svg) !important;
 }
+.dark_body{
+    background-color: #BFBFBF;
+}
+.dark_h1{
+    color: #2A3065 !important;
+    background-color: #BFBFBF !important;
+}

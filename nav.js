@@ -62,4 +62,11 @@ function dark_mode(){
     is_dark = false;
   }
   
+  
+  var d = document.getElementsByClassName("h1_dark");
+  document.body.classList.toggle("dark_body");
+  for(var i = 0; i < d.length; i++){
+    d[i].classList.toggle("dark_h1");
+  }
+  // document.getElementsByClassName("h1_dark").classList.toggle("dark_h1");
 }
