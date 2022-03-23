@@ -86,6 +86,9 @@ body{
         color: white;
         padding: 50px 0 100px 0;
     }
+    .header_image{
+        width: 80%;
+    }
     #header_before{
         content: "";
         position: absolute;
