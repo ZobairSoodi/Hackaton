@@ -554,3 +554,35 @@ body{
     color: #2A3065 !important;
     background-color: #BFBFBF !important;
 }
+.footer{
+    background-color: #3945ba;
+    font-family: 'noto', sans-serif;
+    color: #fff;
+    width: 100%;
+    margin-top: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.solicode{
+    color: #fdd413;
+}
+
+.footer img{
+    width: 80%;
+    height: 80%;
+}
+
+/* footer links */
+.links, .links a{
+    color: #fdd413;
+}
+
+.links:hover, .links a:hover{
+    font-weight: 600;
+    color: #dbb300;
+}
+
+a i{
+    margin: 10px;
+}
