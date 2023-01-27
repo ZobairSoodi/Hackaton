@@ -527,6 +527,10 @@ body{
         section:nth-child(1) div:nth-child(3){
             order: 3;
         }
+        #sponsors{
+            flex-direction: column;
+            gap: 30px;
+        }
     }
 /*----------------------------------*/
 
